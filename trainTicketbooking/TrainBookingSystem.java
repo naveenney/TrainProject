@@ -300,7 +300,7 @@ public class TrainBookingSystem {
 
 		String status = statusOption == 1 ? "CF" : statusOption == 2 ? "WL" : "CANCEL";
 
-		System.out.println(status);
+		
 		for (Passenger passenger : ticket.passengers) {
 			passenger.status = status;
 		}
@@ -333,7 +333,6 @@ public class TrainBookingSystem {
 				scanner.nextLine();
 
 				status = statusOption == 1 ? "CF" : statusOption == 2 ? "WL" : "CANCEL";
-				System.out.println(status);
 				ticket.passengers.get(i).setStatus(status);
 
 				System.out.println("Ticket status updated as.." + status);
